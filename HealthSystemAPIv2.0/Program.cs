@@ -14,11 +14,25 @@ namespace HealthSystemAPIv2._0
             Console.WriteLine("---------------------------------------");
             Console.WriteLine();
 
+            int health = 50;
 
+            Player player; // declaration
+            //player.ShowStats();
+            player = new Player(); // initialization
+            player.ShowStats();
+            player.TakeDamage(50);
+            player.ShowStats();
+            player.Heal(5);
+            player.ShowStats();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey(true);
+        }
+
+        static void Test()
+        {
+            
         }
     }
 }
